@@ -23,7 +23,7 @@ main {
             flex: 1 0 auto;
   }
 .container-fluid {
-    background: url('static/css/img/romanov.jpg');
+    background-image: url('static/css/img/romanov.jpg');
     position:fixed;
     top:0;
     bottom:0;
@@ -33,6 +33,15 @@ main {
     font-family:Playfair Display;
 
 } 
+#faded {
+    background-image: url('static/css/img/romanov.jpg'); 
+     position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0'
+    opacity:rgba(0.0.0.0.8);
+}
 
 
 
@@ -40,8 +49,42 @@ h2{
     text-align: center;
     margin-top:60px;
     margin-left: 15px;
-    font-size: 30px;
+    font-size:2 rem;
     letter-spacing: 5px;
     font-family: Playfair Display;
-    color:green;
+    color:gold
+}
+
+/*-- NavBar --*/
+
+/* box shadow code from https://www.cssmatic.com/box-shadow */
+
+nav {
+    -webkit-box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+nav .brand-logo {
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul li a {
+    letter-spacing: 1px;
+}
+
+/*-- Cards for books on homepage ---*/
+
+#card {
+    padding-top: 50px;
+}
+
+/* box shadow code from https://www.cssmatic.com/box-shadow */
+.card {
+    height: 435px;
+    width: 225px;
+    position: relative;
+    margin: auto;
+    -webkit-box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
+    box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
 }
