@@ -23,7 +23,7 @@ main {
             flex: 1 0 auto;
   }
 .container-fluid {
-    background-image: url('static/css/img/romanov.jpg');
+    background-image: url("static/css/img/romanov.jpg");
     position:fixed;
     top:0;
     bottom:0;
@@ -47,13 +47,13 @@ main {
 
 h2{
     text-align: center;
-    margin-top:100px;
+    margin-top:300px;
     margin-left: 15px;
-    font-size:2.5 rem;
-    letter-spacing: 5px;
+    font-size:6 rem;
+    letter-spacing: 10px;
     font-family: Playfair Display;
-    color:gold;
-    background-image: url('static/css/img/romanov.jpg')
+    color:rgb(228, 24, 102);
+    background-image: url"('static/css/img/romanov.jpg')";
 
 }
 
