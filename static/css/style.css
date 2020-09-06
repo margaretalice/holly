@@ -6,35 +6,30 @@ html {
 }
 
 body {
-    display: -webkit-box;
-    display: -ms-flexbox;
+   
     display: flex;
     min-height: 100vh;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   
   }
 
 main {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
+   
+    flex: 1 0 auto;
   }
 .container-fluid {
-    background-image: url("static/css/img/romanov.jpg");
+   background-image:url('https://static1.thetravelimages.com/wordpress/wp-content/uploads/2019/10/Romanovs-header.jpg?q=50&fit=crop&w=960&h=500');
     position:fixed;
     top:0;
     bottom:0;
     left:0;
     right:0'
-    opacity:rgba(0.0.0.0.8);
+    opacity:rgba(0.0.0.0.2);
     font-family:Playfair Display;
-
 } 
 #faded {
-    background: url('static/css/img/romanov.jpg'); 
+    background-image:url('https://static1.thetravelimages.com/wordpress/wp-content/uploads/2019/10/Romanovs-header.jpg?q=50&fit=crop&w=960&h=500');
      position:fixed;
     top:0;
     bottom:0;
@@ -46,11 +41,11 @@ main {
 
 
 h2{
-    text-align: center;
-    margin-top:300px;
-    margin-left: 15px;
-    font-size:6 rem;
-    letter-spacing: 10px;
+    text-align:center;
+    margin-top:500px;
+    margin-left:15px;
+    font-size:4rem;
+    letter-spacing:5px;
     font-family: Playfair Display;
     color:rgb(228, 24, 102);
     background-image: url"('static/css/img/romanov.jpg')";
@@ -62,7 +57,6 @@ h2{
 /* box shadow code from https://www.cssmatic.com/box-shadow */
 
 nav {
-    -webkit-box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
     box-shadow: -1px 3px 29px -9px rgba(0,0,0,0.75);
     z-index: 1;
 }
