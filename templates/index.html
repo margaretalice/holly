@@ -1,14 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
 
-
-<body>
-<div class="container-fluid"  id="faded">
-<div class="row valign-wrapper">
+<div class="container-fluid">
+	<div class="row valign-wrapper">
 		<div class="col s12 valign">
-     
-			<h2 class="main">Welcome to Russian Reads! </h2>
-			<p class="homePageText center">A site designed for avid readers to share and store your favourite books on all things Russian!
+			<h2 class="mainHeading center">Welcome to I‑Brary!</h2>
+			<p class="homePageText center">A site designed for avid readers to share and store your favourite books!
 			</p>
 		</div>
 	</div>
@@ -41,7 +38,26 @@
 			<p class="homePageText carouselText center">Every week we pick the top picks of your uploads and put them
 				center stage!</p>
 		</div>
-		
+		<div class="col s12 m7 valign carousel">
+			<a class="carousel-item" href="#one!">
+				<img src="{{url_for('static', filename='images/book1.jpg')}}" alt="Image of a book">
+                </a>
+				<a class="carousel-item" href="#two!">
+					<img src="{{url_for('static', filename='images/book2.jpg')}}" alt="Image of a book">
+                </a>
+					<a class="carousel-item" href="#three!">
+						<img src="{{url_for('static', filename='images/book3.jpg')}}" alt="Image of a book">
+                </a>
+						<a class="carousel-item" href="#four!">
+							<img src="{{url_for('static', filename='images/book5.jpg')}}" alt="Image of a book">
+                </a>
+							<a class="carousel-item" href="#five!">
+								<img src="{{url_for('static', filename='images/book6.jpg')}}" alt="Image of a book">
+                </a>
+		</div>
+	</div>
+</div>
+
 
 <hr class="block-divider">
 
@@ -94,8 +110,6 @@
 			</div>
 		</div>
 	</div>
-    </body>
-  
 
 
 	{% endblock %}

@@ -1,27 +1,30 @@
+
+  
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Infinite Scroll</title>
 
+	<title>I-Brary</title>
 </head>
-<body>
-<header>
 
-<div id="page-container">
+<body>
+
+	<div id="page-container">
 		<div id="content-wrap">
-		
+			<header>
 
 				<div class="navbar-fixed">
-					<nav class="grey darken-4">
+					<nav class="indigo darken-4">
 						<div class="nav-wrapper">
-							<a href="{{url_for('index')}}" class="brand-logo center">Russian Reads</a>
+							<a href="{{url_for('index')}}" class="brand-logo center">I-Brary</a>
 							<a href="#" data-target="mobile-demo"
 								class="sidenav-trigger"><i class="material-icons">menu</i></a>
 							<ul class="right hide-on-med-and-down">
@@ -52,28 +55,56 @@
 				</ul>
 
 			</header>
- 
-   <!-- Main Content -->
-    <div class="container">
-        {% block content %} {% endblock %}
-    </div>
 
-<footer>
-</footer>
- <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+			{% block content %}
+			<main>
 
-    <!-- Custom scripts for this template -->
-    <script src="{{ url_for('static', filename='js/clean-blog.min.js') }}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-     <script type="text/javascript">
-        $(document).ready(function() {
-            $('.collapsible').collapsible();
-            $('select').material_select();
-            $(".button-collapse").sideNav();
-        })
-    </script>
+			</main>
+			{% endblock %}
+
+		</div>
+
+		<footer class="page-footer">
+			<div class="container">
+				<div class="row">
+
+					<div class="col l4 offset-l2 s12">
+						<h5 class="footerHeading">Become part of the Community</h5>
+						<ul>
+							<li><a class="" href="{{url_for('show_register')}}">Register</a></li>
+						</ul>
+					</div>
+					<div class="col l6 s12">
+						<h5 class="footerHeading">Connect</h5>
+						<a href="https://www.linkedin.com/in/sophie-wickham-604359146/"
+							target="_blank"><i class="icon fab fa-linkedin-in fa-2x"></i></a>
+						<a href="https://github.com/sw1ckham"
+							target="_blank"><i class="icon fab fa-github fa-2x"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2020 Website Developed by Sophie Wickham
+				</div>
+			</div>
+		</footer>
+
+
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/1d7b4fd179.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+            $('.tabs').tabs();
+            $('.sidenav').sidenav();
+            $('.carousel').carousel();
+        });
+
+	</script>
 </body>
 
 </html>
